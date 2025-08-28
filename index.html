@@ -42,43 +42,85 @@
     </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav container">
-            <div class="nav-brand">
-                <span class="logo">ZM</span>
-            </div>
-            <ul class="nav-menu" role="menubar">
-                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
-                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
-                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
-                <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
-                <li role="none"><a href="#education" class="nav-link" role="menuitem">Education</a></li>
-                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
-            </ul>
-            <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-                <span class="theme-icon">🌙</span>
-            </button>
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+        <span class="theme-icon">🌙</span>
+    </button>
 
     <main>
         <!-- Hero Section -->
         <section class="hero" id="hero">
             <div class="container">
                 <div class="hero-content fade-in">
+                    <!-- Profile Picture Section -->
+                    <div class="profile-section">
+                        <div class="profile-picture-container">
+                            <div class="profile-picture">
+                                <div class="profile-placeholder">
+                                    <span class="profile-initials">ZM</span>
+                                </div>
+                            </div>
+                            <!-- Technology Icons Around Profile -->
+                            <div class="tech-icons">
+                                <div class="tech-icon" style="--delay: 0s">
+                                    <span class="tech-emoji">⚛️</span>
+                                    <span class="tech-tooltip">React</span>
+                                </div>
+                                <div class="tech-icon" style="--delay: 0.5s">
+                                    <span class="tech-emoji">🎨</span>
+                                    <span class="tech-tooltip">CSS3</span>
+                                </div>
+                                <div class="tech-icon" style="--delay: 1s">
+                                    <span class="tech-emoji">📄</span>
+                                    <span class="tech-tooltip">HTML5</span>
+                                </div>
+                                <div class="tech-icon" style="--delay: 1.5s">
+                                    <span class="tech-emoji">⚡</span>
+                                    <span class="tech-tooltip">JavaScript</span>
+                                </div>
+                                <div class="tech-icon" style="--delay: 2s">
+                                    <span class="tech-emoji">🎯</span>
+                                    <span class="tech-tooltip">Next.js</span>
+                                </div>
+                                <div class="tech-icon" style="--delay: 2.5s">
+                                    <span class="tech-emoji">🎪</span>
+                                    <span class="tech-tooltip">Tailwind</span>
+                                </div>
+                                <div class="tech-icon" style="--delay: 3s">
+                                    <span class="tech-emoji">🔧</span>
+                                    <span class="tech-tooltip">Git</span>
+                                </div>
+                                <div class="tech-icon" style="--delay: 3.5s">
+                                    <span class="tech-emoji">🎨</span>
+                                    <span class="tech-tooltip">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <h1 class="hero-title">Zahraa Magdi</h1>
                     <p class="hero-subtitle typewriter">Front-end Developer</p>
                     <p class="hero-bio">I build dynamic, responsive web apps with React.js and JavaScript. Passionate about clean UI, accessibility, and performance.</p>
                     <p class="hero-tagline">Building clean, fast, and accessible web experiences.</p>
+                    
                     <div class="hero-cta">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
                         <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        <button class="btn btn-cv" onclick="downloadCV()">
+                            <span class="btn-icon">📄</span>
+                            Download CV
+                        </button>
                     </div>
                 </div>
             </div>
