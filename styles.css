@@ -10,15 +10,16 @@
 /* CSS Variables for Themes */
 :root {
   /* Dark Theme (Default) - Softer Mauve & Pink Mix */
+    
   --bg-primary: #0f0a1a;
   --bg-secondary: #1a1025;
   --bg-tertiary: #2d1b3d;
   --text-primary: #f8f4ff;
   --text-secondary: #d4c7e7;
   --text-muted: #a89bb8;
-  --accent-primary: #c2185b;
+  --accent-primary: #898AC4;
   --accent-secondary: #7b1fa2;
-  --accent-tertiary: #e91e63;
+  --accent-tertiary: #a7a7d8;
   --border-color: #3d2b4d;
   --shadow: rgba(123, 31, 162, 0.15);
 
